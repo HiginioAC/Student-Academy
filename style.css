@@ -1,0 +1,109 @@
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f5f5f5;
+     margin: 0;
+     padding: 0;
+ }
+
+ header {
+     background-color: #1068af;
+     color: white;
+     text-align: center;
+     padding: 20px 0;
+ }
+
+ nav {
+     background-color: #1a498a;
+     padding: 10px;
+     text-align: center;
+ }
+
+ nav a {
+     color: white;
+     text-decoration: none;
+     margin: 0 10px;
+ }
+
+ nav a:hover {
+     background-color: #02242c68;
+     padding: 0.5%;
+     border-radius: 10px;
+ }
+
+ main {
+     max-width: 900px;
+     margin: 20px auto;
+     padding: 5%;
+     background-color: white;
+     border-radius: 8px;
+ }
+
+ h2 {
+     color: #333;
+     text-align: center;
+ }
+
+ .productos {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 15px;
+     margin-top: 20px;
+ }
+
+ .producto {
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     padding: 10px;
+     text-align: center;
+ }
+
+ .producto img {
+     width: 100%;
+     height: 180px;
+     object-fit: cover;
+     border-radius: 8px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ img:hover {
+     transform: scale(1.1);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+ }
+
+ .precio {
+     color: #00667b;
+     font-weight: bold;
+ }
+
+ footer {
+     background-color: #222;
+     color: white;
+     text-align: center;
+     padding: 15px 0;
+     margin-top: 30px;
+ }
+
+ .correo {
+     text-decoration: none;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .correo:hover {
+     color: #1a498a;
+ }
+
+ .encuesta-btn {
+     display: inline-block;
+     background-color: #007bff;
+     color: white;
+     text-decoration: none;
+     padding: 10px 15px;
+     border-radius: 6px;
+     margin: 10px auto;
+     font-size: 15px;
+     transition: background-color 0.3s ease;
+ }
+
+ .encuesta-btn:hover {
+     background-color: #0056b3;
+ }
