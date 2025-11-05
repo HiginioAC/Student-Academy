@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* CONTENEDOR DE MATERIAS */
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px 60px;
+        }
+
+        .materia {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .materia:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .materia img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .materia h3 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .materia p {
+            color: #555;
+            font-size: 15px;
+        }
+
+        .volver-btn {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin: 15px auto;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .volver-btn:hover {
+            background-color: #34495e;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 900px) {
+            .contenedor {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contenedor {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            header img {
+                position: static;
+                display: block;
+                margin: 0 auto 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Materias</h1>
+        <p>Conoce las asignaturas disponibles</p>
+    </header>
+
+    <div class="contenedor">
+        <div class="materia">
+            <img src="matematica.jpg" alt="Matemáticas">
+            <h3>Matemáticas</h3>
+            <p>Aprende sobre números, álgebra y geometría.</p>
+        </div>
+
+        <div class="materia">
+            <img src="ingles.png" alt="Ingles">
+            <h3>Ingles</h3>
+            <p>Aprende a dominar este idioma, hablalo, entiendelo y solo disfrutalo.</p>
+            <p>Niveles: A1-C2</p>
+        </div>
+
+        <div class="materia">
+            <img src="programacion.jpg" alt="Programacion">
+            <h3>Programación</h3>
+            <p>Aprende las bases fundamentales para el desarrolo de sistemas.</p>
+        </div>
+
+        <div class="materia">
+            <img src="estadistica.jpg" alt="Estadistica">
+            <h3>Estadistica</h3>
+            <p>Desarrolla tus habilidades en estadistica.</p>
+        </div>
+
+        <div class="materia">
+            <img src="web.jpeg" alt="Diseno WEB">
+            <h3>Diseño WEB</h3>
+            <p>Empieza a desarrollar y diseñar paginas y aplicaciones WEB.</p>
+        </div>
+
+        <div class="materia">
+            <img src="teclados.jpg" alt="Musica">
+            <h3>Musica</h3>
+            <p>Despierta tu creatividad y tu oido para llevar tu musica a otro nivel.</p>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <button class="volver-btn" onclick="window.history.back()"> Volver al inicio </button>
+    </div>
+
+    <footer>
+        <p>Atudent Academy - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
